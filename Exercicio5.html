@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <script>
+
+function soma(a,b)
+        {
+            var res=a+b
+            return (res);
+        }
+        function sub(a,b)
+        {
+            var res=a-b
+            return (res);
+        }
+        function mult(a,b)
+        {
+            var res=a*b
+            return (res);
+        }
+        function div(a,b)
+        {
+            var res=a/b
+            return (res);
+        }
+        function restDiv(a,b)
+        {
+            var res=a%b
+            return (res);
+        }
+        function dobro(a)
+        {
+            var res=a*2
+            return (res);
+        }
+        function qua(a)
+        {
+            var res=a*a
+            return (res);
+        }
+        function cubo(a)
+        {
+            var res=a*a*a
+            return (res);
+        }
+        function raiz(a)
+        {
+            var res= math.sqtr(a)
+            return (res);
+        }
+
+        var verificarConta, resSoma, resSub, resDiv, resMult, resRest, resDo, resQua, resCubo, resRaiz, valor1, valo2
+        do
+        {
+            verificarConta=(parseInt(prompt("Escolha uma operação:\n\n1-Soma\n2-Subtração\n3-Divisão\n4-Multiplicação\n5-Resto da Divisão\n6-Dobro\n7-Quadrado\n8-Cubo\n9-Raiz Quadrada\n0-Sair")))
+           switch (verificarConta)
+           {
+            case 1:
+                valor1=parseFloat(prompt("Digite um valor"))
+                valor2=parseFloat(prompt("Digite um valor"))
+                resSoma=soma(valor1,valor2)
+                alert("Resultado: "+resSoma)
+                break;
+            case 2:
+                valor1=parseFloat(prompt("Digite um valor"))
+                valor2=parseFloat(prompt("Digite um valor"))
+                resSub=sub(valor1,valor2)
+                alert("Resultado: "+resSub)
+                break;
+            case 3:
+                valor1=parseFloat(prompt("Digite um valor"))
+                valor2=parseFloat(prompt("Digite um valor"))
+                resDiv=div(valor1,valor2)
+                alert("Resultado: "+resDiv)
+                break;
+            case 4:
+                valor1=parseFloat(prompt("Digite um valor"))
+                valor2=parseFloat(prompt("Digite um valor"))
+                resMult=mult(valor1,valor2)
+                alert("Resultado: "+resMult)
+                break;
+            case 5:
+                valor1=parseFloat(prompt("Digite um valor"))
+                valor2=parseFloat(prompt("Digite um valor"))
+                resRest=restDiv(valor1,valor2)
+                alert("Resultado: "+resRest)
+                break;
+            case 6:
+                valor1=parseFloat(prompt("Digite um valor"))
+                resDo=dobro(valor1)
+                alert("Resultado: "+resDo)
+                break;
+            case 7:
+                valor1=parseFloat(prompt("Digite um valor"))
+                resQua=qua(valor1)
+                alert("Resultado: "+resQua)
+                break;
+            case 8:
+                valor1=parseFloat(prompt("Digite um valor"))
+                resCubo=cubo(valor1)
+                alert("Resultado: "+resCubo)
+                break;
+            case 9:
+                valor1=parseFloat(prompt("Digite um valor"))
+                resRaiz=raiz(valor1)
+                alert("Resultado: "+resRaiz)
+                break;
+           } 
+        } while (verificarConta!=0)   
+     </script>
+     </body>
+     </html>
